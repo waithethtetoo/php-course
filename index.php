@@ -15,7 +15,10 @@
 			$products['Car'] = 15000;
 			$products['iPhone'] = 1000;
 			$products['Toaster'] = 75;
-			echo "<p>A car costs ".$products['Car']."</p>";
+			foreach ($products as $key => $value) {
+				echo "<p>The ".$key." costs ".$value."</p>";
+			}
+			
 		?>
 	</body>
 </html>
